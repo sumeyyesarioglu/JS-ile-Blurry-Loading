@@ -10,6 +10,8 @@ function blurring () {
     load++
     if(load>99) {
         clearInterval(int)//temiz bir sekilde yazılımı sağlıyor 100'e kadar
+    }else if(load>50){
+        clearInterval(int)
     }
 
     loadText.innerText= `${load}%`
